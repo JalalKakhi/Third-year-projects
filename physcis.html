@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width?=device-width, initial-scale=1.0">
+    <title>physcis</title>
+</head>
+
+<body>
+
+    <h1 id="jalal"> hello jalal</h1>
+    <h1 class="mustafa"> hello jalal</h1>
+    <div class="name ">nour</div>
+    <div class="name ">jalal</div>
+    <div class="name ">mustafa</div>
+
+
+
+    <script>
+        const jalal = document.querySelector('#jalal')
+        const mustafa = document.querySelector('.mustafa')
+        const name = document.querySelectorAll('.name')
+        const numbers = [5, 6, 7]
+        jalal.style.color = "red"
+
+        console.log("name")
+
+        for (let i = 0; i < name.length; i++) {
+            if (name[i].innerHTML == "nour") {
+                name[i].style.color = "red"
+            }
+        }
+
+
+        setTimeout(() => {
+            jalal.innerHTML = "hello world"
+        }, 2000)
+        let x = 20
+        const c = "jalal"
+        console.log(x)
+    </script>
+</body>
+
+</html>
